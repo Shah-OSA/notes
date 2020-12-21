@@ -22,3 +22,5 @@ push to remote repository
 rebase ==========
 when locat directpry is not uptodate with remote directory 
 we need to fetch or pull the main/master branch and thn push the changes to the remote 
+git add filename 
+git commit -m "commit msg" 
