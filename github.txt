@@ -25,6 +25,13 @@ we need to fetch or pull the main/master branch and thn push the changes to the 
 git add filename 
 git commit -m "commit msg" 
 
+====================
+Or you could set it up so that your local master branch tracks github master branch as an upstream:
+
+git branch --set-upstream-to=origin/master master
+git pull
+========================================================
+
 
 
 adding readme file 
