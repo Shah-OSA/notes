@@ -1,0 +1,40 @@
+1.Give me customer whose postal code is between 1000 and 2000 
+ - SELECT * from Customers Where PostalCode Between 1000 and 2000;
+2 Give me customer whose address in only frace
+- SELECT * from Customers Where Country='France';
+3. Give customer who doesn't live in Berlin city
+- SELECT * from Customers Where City!='Berlin';
+SELECT * from Customers Where  Not City = 'Berlin';
+4 Give me customer who lives in both in Mexico and Germany
+(And is same raw but both coditions are true 
+Or is same raw but one of the condirion is true)
+- SELECT * from Customers Where Country='Mexico' or Country='Germany';
+
+5 Give employee who is born before 1960
+- SELECT * FROM employees WHERE BirthDate<('1960-01-01');
+6 Give me employee whose first names are same
+ -- SELECT *
+    FROM Employees
+    GROUP BY FirstName
+    HAVING COUNT(*) > 1 ;
+     -- SELECT Count(*),CustomerName
+    FROM Customers
+    GROUP BY CustomerName
+    HAVING COUNT(*) > 1 ;
+    --SELECT * FROM Employees WHERE FirstName = 'Nancy';
+
+7 Give me Customer where customer found in Customer table and order table and employee table.
+This question is not valid because there is not relation between customer and employee.
+- SELECT *
+    FROM Customers, Orders,Employees
+   where Customers.CustomerID = Orders.CustomerID and
+   Employees.EmployeeID = Orders.EmployeeID  ;
+   
+8 Give me customer who is not in Shipper table but in Customer table
+-this is also not valid since there is no relationship between customer and shipper
+-SELECT *
+    FROM Customers, Shippers
+   where Customers.CustomerName != Shippers.ShipperName
+   ;
+9 Give me customer who is only in Customer table
+-SELECT * FROM Customers

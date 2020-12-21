@@ -1,0 +1,12 @@
+Github
+ clone 
+fetch 
+Rebase 
+create new branch 
+commit 
+push 
+pull request 
+Local repository 
+remote repository 
+Working directory 
+reb blue green color change  on InteliJ -

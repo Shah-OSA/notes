@@ -1,0 +1,73 @@
+public class Main {
+     public static void main(String []args){
+       // int [] list = {2,3,5,9,6,8,1,4,7};
+       int [] list={0,1,5,3} ;
+        sortArrayList(list);
+    }
+
+    public static int[] sortArrayList(int[] arrayList){
+        if(arrayList.length == 0){
+            return arrayList;
+        }
+        int length = arrayList.length;
+        for(int i=0; i< length; i++ ){
+            int temp = arrayList[i];
+            for(int j=i+1; j< length; j++){
+                if(arrayList[i]< arrayList[j]){
+                    temp = arrayList[i];
+                    arrayList[i]= arrayList[j];
+                    arrayList[j]= temp;
+                }
+            }
+        }
+        System.out.println(Arrays.toString(arrayList));
+        return arrayList;
+
+    }
+}
+-------------------- -------- explanation -------------------- -----------------
+int [] list={0,1,5,3} ;
+ ===================================
+i=0 true
+temp = 0 ;
+     j=0+1 true   -------
+     if (0<1) true 
+     temp = 0 
+     arraylist[0] = 1
+     arraylist[1] = 0 
+                               // arraylist [] ={1,0,5,3} 
+	     j=1+1 true -------
+	     if ( 1<5) true 
+	     temp = 1
+	     arraylist[0]= 5 
+	     arraylist[2]= 1
+                               // arraylist [] ={5,0,1,3} 
+     		       j=2+1 true -------
+	                if ( 5<3) False  
+                               // arraylist [] ={5,0,1,3} 
+ ==========================================================      
+arraylist [] ={5,0,1,3}          
+i=1 true
+temp = 0 ;
+   j=1+1=2 true   -------
+     if (0<1) true 
+     temp = 0 
+     arraylist[1] = 1
+     arraylist[2] = 0 
+                               // arraylist [] ={5,1,0,3}  
+           j=2+1=3 true -------
+	     if ( 1<3) true
+               temp = 1
+               arraylist[1] = 3
+                arraylist[3] = temp = 1
+	                       // arraylist [] ={5,3,1,3} 
+                         j=3+1 FALSE -------
+	                         /// arraylist [] ={5,0,1,3} 
+ ==========================================================    ========================
+ print () [5,0,1,3]
+
+
+
+
+
+   
