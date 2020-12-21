@@ -24,6 +24,9 @@ when locat directpry is not uptodate with remote directory
 we need to fetch or pull the main/master branch and thn push the changes to the remote 
 git add filename 
 git commit -m "commit msg" 
+git pull origin master 
+git checkout localbranch
+git merge master 
 
 ====================
 Or you could set it up so that your local master branch tracks github master branch as an upstream:
