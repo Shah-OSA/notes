@@ -15,6 +15,6 @@ order of workflow =============
 clone the project on local workdirectory 
 create a new branch git checkout -b <branchname>
 add the changes to the branch git add <filename>/.
-commit -m to thr brunch 
+commit -m to the brunch with commit msg
 merge the new brunch with main/master branch 
 push to remote repository 
