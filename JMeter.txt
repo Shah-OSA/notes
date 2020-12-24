@@ -1,0 +1,30 @@
+Start Jmeter from bin folder 
+Create a test plan (dif btwn test plan and workbench)
+create a tread group (users)
+add a sampler (http)
+add listeners 
+run the test 
+	Assertions ========
+Response assertion 
+Duration Assertion
+size assertion
+html assertion
+xml assertion
+XPATH asertion
+	Listeners =======
+view results in table 
+view results tree
+agggregate report
+graph report 
+summary report 
+simple data writer
+	Record UI test =============
+tools available for recording Jmeter UI test 
+   Badboy Software 
+     Blazemeter - chrome plugin = 
+record a test 
+export as Jmeter (.jmx) script 
+open the script in Jmeter 
+Add listeners 
+Run and validate 
+	
